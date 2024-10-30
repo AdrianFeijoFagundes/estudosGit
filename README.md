@@ -7,3 +7,9 @@
 - git fetch
 - git push
 - git pull
+
+git branch -v
+git branch --merged 
+git branch --no-merged
+git branch -d
+git branch -D nomeBranch
