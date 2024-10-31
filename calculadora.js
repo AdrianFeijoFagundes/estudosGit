@@ -10,38 +10,38 @@ const calculadora = {
 const menu = () => {
     
     while(true) {
-        let n1, n2 = NaN
+        let n1, n2, result = NaN
         console.log("1 - Soma")
-        console.log("2 - Divisão")
+        console.log("2 - Subtração")
         console.log("3 - Multiplicação")
         console.log("4 - Divisão")
         console.log("5 - Sair")
         
-        const option = rl.questionInt("Escolha uma opção: ")
+        const option = rl.questionInt("Escolha uma opçao: ")
         
         console.clear() 
         switch (option) {
             case 1:
-                n1 = rl.questionFloat("Digite o primeiro número: ")
-                n2 = rl.questionFloat("Digite o segundo número: ")
-                let result = calculadora.sum(n1, n2)
+                n1 = rl.questionFloat("Digite o primeiro numero: ")
+                n2 = rl.questionFloat("Digite o segundo numero: ")
+                result = calculadora.sum(n1, n2)
                 console.log(`O resultado da soma é: ${result}`)
                 break
             case 2:
-                n1 = rl.questionFloat("Digite o primeiro número: ")
-                n2 = rl.questionFloat("Digite o segundo número: ")
+                n1 = rl.questionFloat("Digite o primeiro numero: ")
+                n2 = rl.questionFloat("Digite o segundo numero: ")
                 result = calculadora.sub(n1, n2)
                 console.log(`O resultado da subtração é: ${result}`)
                 break
             case 3:
-                n1 = rl.questionFloat("Digite o primeiro número: ")
-                n2 = rl.questionFloat("Digite o segundo número: ")
+                n1 = rl.questionFloat("Digite o primeiro numero: ")
+                n2 = rl.questionFloat("Digite o segundo numero: ")
                 result = calculadora.mul(n1, n2)
                 console.log(`O resultado da multiplicação é: ${result}`)
                 break
             case 4:
-                n1 = rl.questionFloat("Digite o primeiro número: ")
-                n2 = rl.questionFloat("Digite o segundo número: ")
+                n1 = rl.questionFloat("Digite o primeiro numero: ")
+                n2 = rl.questionFloat("Digite o segundo numero: ")
                 result = calculadora.div(n1, n2)
                 console.log(`O resultado da divisão é: ${result}`)
                 break
