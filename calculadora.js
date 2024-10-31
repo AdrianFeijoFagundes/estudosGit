@@ -17,7 +17,7 @@ const menu = () => {
         console.log("4 - Divisão")
         console.log("5 - Sair")
         
-        const option = rl.questionInt("Escolha uma opção")
+        const option = rl.questionInt("Escolha uma opção: ")
         
         console.clear() 
         switch (option) {
@@ -32,7 +32,7 @@ const menu = () => {
                 n2 = rl.questionFloat("Digite o segundo número: ")
                 result = calculadora.sub(n1, n2)
                 console.log(`O resultado da subtração é: ${result}`)
-                brea
+                break
             case 3:
                 n1 = rl.questionFloat("Digite o primeiro número: ")
                 n2 = rl.questionFloat("Digite o segundo número: ")
