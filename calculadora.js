@@ -6,6 +6,12 @@ const calculadora = {
     mul: (n1, n2) => n1 * n2,
     div: (n1, n2) => n1 / n2
 }
+const numerosEscolhidos = () => {
+    n1 = rl.questionFloat("Digite o primeiro numero: ")
+    n2 = rl.questionFloat("Digite o segundo numero: ")
+    
+    return [n1 + n2]
+}
 
 const menu = () => {
     
@@ -24,8 +30,7 @@ const menu = () => {
         switch (option) {
             case 1:
                 console.log(`SOMA`)
-                n1 = rl.questionFloat("Digite o primeiro numero: ")
-                n2 = rl.questionFloat("Digite o segundo numero: ")
+
                 result = calculadora.sum(n1, n2)
                 console.log(`O resultado da soma é: ${result}`)
                 rl.question()
