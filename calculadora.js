@@ -9,7 +9,6 @@ const calculadora = {
 const numerosEscolhidos = () => {
     n1 = rl.questionFloat("Digite o primeiro numero: ")
     n2 = rl.questionFloat("Digite o segundo numero: ")
-    
     return [n1 + n2]
 }
 
