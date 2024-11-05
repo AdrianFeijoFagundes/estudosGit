@@ -12,3 +12,4 @@
 - git branch --no-merged
 - git branch -d nomeBranch
 - git branch -D nomeBranch
+- git branch -b nomeBranch
