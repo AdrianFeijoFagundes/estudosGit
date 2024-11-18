@@ -13,3 +13,8 @@
 - git branch -d nomeBranch
 - git branch -D nomeBranch
 - git branch -b nomeBranch
+
+- git fetch
+- git branch nome origin/nome_branch_remota
+- repositório local precisa estar atualizado
+- git cherry-pick hash -
